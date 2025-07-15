@@ -1,7 +1,6 @@
 nav {
   height: 80px;
   width: 90%;
-  border: solid 2px black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,18 +8,222 @@ nav {
   position: relative;
 }
 
+.vdt-logo {
+  max-width: 30%;
+  cursor: pointer;
+}
+
 .lang {
-  width: 5%;
+  width: 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 2px yellow;
+}
+
+.languages {
+  position: absolute;
+  top: 65%;
+  right: 5%;
+  height: 25vh;
+  width: 20vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 2% 0;
+}
+
+.languages ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languages li {
+  list-style: none;
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1% 0;
+}
+
+.languages li:hover {
+  background: rgba(177, 172, 172, 0.2);
+  transition: 1s;
+}
+
+.hamburger {
+  cursor: pointer;
 }
 
 .lang p {
   font-weight: 700;
+  cursor: pointer;
 }
 
-.lang img {
+.dropdown {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  top: 5%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*background: linear-gradient(118.61deg, #1C5980 0.99%, #013534 100%);*/
+}
+
+.dropdown .close {
+  align-self: end;
+  margin-right: 10%;
+  max-width: 12%;
   cursor: pointer;
+}
+
+.main {
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.main .menu {
+  position: absolute;
+  left: -4%;
+  top: 5%;
+}
+
+.dropdown li {
+  list-style: none;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 5% 0;
+  cursor: pointer;
+}
+
+.dropdown li img {
+  margin-left: 5%;
+  width: 10%;
+}
+
+.foot {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot div {
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot div img {
+  height: 20px;
+  width: 20px;
+  margin: auto 0;
+}
+
+.foot .vdt-sm-logo {
+  width: 10%;
+  margin: 0;
+}
+
+
+@media (max-width: 736px) {
+  .vdt-logo {
+    max-width: 35%;
+  }
+
+  .lang {
+    width: 20%;
+  }
+
+  .dropdown {
+    width: 50%;
+    position: fixed;
+    height: 60vh;
+  }
+
+  .dropdown li {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 5%;
+  }
+
+  .foot .vdt-sm-logo {
+    width: 20%;
+  }
+
+  .main .menu {
+    top: 3%;
+    left: -10%;
+  }
+
+  .foot div {
+    width: 40%;
+  }
+
+  .foot div img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .foot .vdt-sm-logo {
+    width: 35%;
+  }
+
+  .languages {
+    top: 80%;
+    padding: 4% 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown {
+    height: 90vh;
+  }
+
+  .foot div img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .languages {
+    height: 30vh;
+    width: 30vh;
+  }
+}
+
+
+
+
+@media (min-width:737px) and (max-width:1080px) {
+  .dropdown li {
+    margin-bottom: 15%;
+    font-size: 35px;
+  }
+
+  .main .menu {
+    position: absolute;
+    left: -6%;
+  }
+
+  .lang {
+    width: 10%;
+  }
+
+  .foot div {
+    width: 20%;
+  }
+
+  .languages {
+    height: 15vh;
+    width: 15vh;
+  }
+
 }
