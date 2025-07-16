@@ -66,7 +66,8 @@ nav {
   position: absolute;
   z-index: 5;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  background-color: white;
   top: 5%;
   right: 0;
   display: flex;
@@ -78,6 +79,7 @@ nav {
 .dropdown .close {
   align-self: end;
   margin-right: 10%;
+  margin-top: 5%;
   max-width: 12%;
   cursor: pointer;
 }
@@ -111,7 +113,7 @@ nav {
 
 .foot {
   width: 80%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 5% auto;
   display: flex;
   justify-content: space-between;
 }
@@ -147,6 +149,9 @@ nav {
     width: 50%;
     position: fixed;
     height: 60vh;
+    border: 1px solid #1C5980;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
 
   .dropdown li {
@@ -183,7 +188,7 @@ nav {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .dropdown {
     height: 90vh;
   }
