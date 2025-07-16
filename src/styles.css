@@ -75,7 +75,7 @@ p {
 
 
 /* ----------- Tablets ----------- */
-@media (min-width: 736px) and (max-width: 1080px) {
+@media (min-width: 737px) and (max-width: 1080px) {
   p {
     font-size: clamp(9px, 1.5vh, 12px);
   }
