@@ -1,0 +1,187 @@
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.first {
+  width: 100%;
+  height: 85px;
+  background-color: #A8A6803B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first div {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first img {
+  max-width: 10%;
+}
+
+.second {
+  background: linear-gradient(118.61deg, #1C5980 0.99%, #013534 100%);
+  color: white;
+  padding: 3% 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 3fr;
+}
+
+.second li {
+  list-style: none;
+}
+
+.second .vdt, .second .touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second p {
+  margin-bottom: 7%;
+  font-weight: 700;
+}
+
+.second .vdt img:nth-of-type(1) {
+  max-width: 60%;
+  margin-bottom: 3%;
+}
+
+.second .vdt img:nth-of-type(1) {
+  max-width: 40%;
+}
+
+
+.touch li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.touch p {
+  margin-bottom: 5%;
+}
+
+.touch li img {
+  max-width: 23px;
+  margin-right: 5%;
+}
+
+.touch .icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.touch .icons img {
+  max-width: 23px;
+  height: 23px;
+}
+
+.third {
+  background: linear-gradient(118.61deg, #1C5980 0.99%, #013534 100%);
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 2%;
+}
+
+.third p {
+  margin-right: 1%;
+  font-size: 14px;
+}
+
+
+@media (max-width: 736px) {
+  .first {
+    height: 45px;
+  }
+
+  .second {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .second .vdt img:nth-of-type(1) {
+    margin-bottom: 10%;
+  }
+
+  .touch {
+    margin: 5% 0;
+    font-size: 10px;
+  }
+
+  .touch ul {
+    width: 80%;
+  }
+
+  .company, .explore {
+    font-size: 10px;
+    margin-bottom: 10%;
+    order: -1;
+    text-align: center;
+  }
+
+  .second p {
+    margin-bottom: 2%;
+  }
+
+  .second .vdt {
+    margin: 5%;
+  }
+
+  .touch .icons img {
+    max-width: 13px;
+    height: 13px;
+  }
+
+  .third {
+    font-size: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+  }
+
+  .third p {
+    font-size: 10px;
+    margin-bottom: 2%;
+  }
+
+}
+
+
+
+@media (max-width: 350px) {
+  .second {
+    grid-template-columns: 0.8fr 2.8fr;
+  }
+}
+
+
+@media (min-width: 737px) and (max-width: 1080px) {
+  .second {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .second p {
+    margin-bottom: 2%;
+  }
+
+  .company, .explore {
+    text-align: center;
+    margin-bottom: 10%;
+    order: -1;
+  }
+}
+
+
+
+
