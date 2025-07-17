@@ -1,0 +1,166 @@
+/*Section one*/
+.section-one {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0, 0, 0, 0.45));
+}
+
+.bg-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+.section-one div {
+  width: 55%;
+  margin: 5% 0 0 10%;
+}
+
+.section-one div p {
+  margin-top: 1%;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+
+/*Section two*/
+.section-two {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.section-two h3 {
+  color: #A8A680;
+}
+
+.section-two h2 {
+  margin: 1% 0;
+}
+
+.section-two p {
+  width: 35%;
+  margin: 0 auto;
+}
+
+/*Section three*/
+.section-three {
+  height: 90vh;
+  width: 100%;
+}
+
+.section-three img {
+  position: absolute;
+  width: 45%;
+}
+
+.row-x {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row-x img:nth-of-type(1){
+  left: 5%;
+}
+
+.row-x img:nth-of-type(2){
+  right: -5%;
+  bottom: 10%;
+}
+
+.section-three p {
+  position: absolute;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.section-three p:nth-of-type(1) {
+  bottom: 35%;
+  left: 25%;
+}
+
+.section-three p:nth-of-type(2) {
+  right: 3%;
+  bottom: 13%;
+}
+
+/*Section four*/
+.section-four {
+  height: 90vh;
+  width: 100%;
+}
+
+.section-four img {
+  position: absolute;
+  max-width: 50%;
+}
+
+.row-y {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row-y img:nth-of-type(1){
+  left: 0;
+  bottom: 10%;
+}
+
+.row-y img:nth-of-type(2){
+  right: 0;
+  top: 0;
+}
+
+
+
+
+
+@media (max-width: 736px) {
+
+  .section-one div {
+    width: 90%;
+    margin: 10% auto 0 auto;
+  }
+
+  .section-one div p {
+    font-size: 0.6em;
+  }
+
+  .section-two p {
+    width: 60%;
+  }
+}
+
+
+
+
+
+@media (max-width: 350px) {
+  .section-one div {
+    margin: 15% auto 0 auto;
+  }
+}
+
+
+
+
+
+@media (min-width:737px) and (max-width:1080px) {
+  .section-one div {
+    width: 70%;
+
+  }
+}
+
