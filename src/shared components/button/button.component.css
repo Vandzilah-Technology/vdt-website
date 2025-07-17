@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+  color: white;
+  background-color: #1C5980;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 0 4px 0 12px;
+  margin-top: 20px;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 17px;
+  padding: 6px 0;
+  transition: 0.5s;
+}
+
+img {
+  margin-left: 10px;
+}
+
+
+@media (max-width: 736px) {
+  img {
+   transform: scale(0.7);
+    margin-left: 3px;
+  }
+
+  a {
+    height: 30px;
+  }
+
+  span:hover {
+    padding: 3px 0;
+  }
+}

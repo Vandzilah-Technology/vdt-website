@@ -1,48 +1,50 @@
 <nav>
-  <img *ngIf="!isHamburger" class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
-  <div class="lang">
-    <p *ngIf="!isHamburger" (click)="setLanguages()">{{languages[0].languageCode}}</p>
+ <div class="box">
+   <img *ngIf="!isHamburger" class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
+   <div class="lang">
+     <p *ngIf="!isHamburger" (click)="setLanguages()">{{languages[0].languageCode}}</p>
 
-    <ng-container *ngIf="isLanguages">
-      <div data-aos="fade-left" data-aos-easing="ease-in-back" class="languages">
-        <ul>
-          <li>French (FR)</li>
-          <li>Spanish (ES)</li>
-          <li>German (DE)</li>
-          <li>Dutch (NL)</li>
-        </ul>
-      </div>
-    </ng-container>
+     <ng-container *ngIf="isLanguages">
+       <div data-aos="fade-left" data-aos-easing="ease-in-back" class="languages">
+         <ul>
+           <li>French (FR)</li>
+           <li>Spanish (ES)</li>
+           <li>German (DE)</li>
+           <li>Dutch (NL)</li>
+         </ul>
+       </div>
+     </ng-container>
 
-    <ng-container *ngIf="isHamburger">
-      <div data-aos="fade-left" data-aos-easing="ease-in-back" class="dropdown">
-        <img class="close" (click)="setHamburger()" src="/core/nav/close-button.svg" alt="close button">
-        <div class="main">
-          <img class="menu" src="/core/nav/MENU.svg" alt="">
-          <ul>
-            <li>Projects</li>
-            <li>Services</li>
-            <li>Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow"></li>
-            <li>Careers</li>
-            <li>Insights</li>
-            <li>Get In Touch</li>
-          </ul>
-        </div>
+     <ng-container *ngIf="isHamburger">
+       <div data-aos="fade-left" data-aos-easing="ease-in-back" class="dropdown">
+         <img class="close" (click)="setHamburger()" src="/core/nav/close-button.svg" alt="close button">
+         <div class="main">
+           <img class="menu" src="/core/nav/MENU.svg" alt="">
+           <ul>
+             <li>Projects</li>
+             <li>Services</li>
+             <li>Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow"></li>
+             <li>Careers</li>
+             <li>Insights</li>
+             <li>Get In Touch</li>
+           </ul>
+         </div>
 
-        <div class="foot">
-          <div>
-            <img src="/core/nav/youtube.svg" alt="youtube">
-            <img src="/core/nav/facebook.svg" alt="facebook">
-            <img src="/core/nav/twitter.svg" alt="twitter">
-            <img src="/core/nav/instagram.svg" alt="instagram">
-            <img src="/core/nav/linkedin.svg" alt="linkedin">
-          </div>
+         <div class="foot">
+           <div>
+             <img src="/core/nav/youtube.svg" alt="youtube">
+             <img src="/core/nav/facebook.svg" alt="facebook">
+             <img src="/core/nav/twitter.svg" alt="twitter">
+             <img src="/core/nav/instagram.svg" alt="instagram">
+             <img src="/core/nav/linkedin.svg" alt="linkedin">
+           </div>
 
-          <img class="vdt-sm-logo" src="/core/nav/VDT-logo-sm.svg" alt="vdt logo">
-        </div>
-      </div>
-    </ng-container>
+           <img class="vdt-sm-logo" src="/core/nav/VDT-logo-sm.svg" alt="vdt logo">
+         </div>
+       </div>
+     </ng-container>
 
-    <img class="hamburger" (click)="setHamburger()" *ngIf="!isHamburger" src="/core/nav/hamburger.svg" alt="hamburger icon">
-  </div>
+     <img class="hamburger" (click)="setHamburger()" *ngIf="!isHamburger" src="/core/nav/hamburger.svg" alt="hamburger icon">
+   </div>
+ </div>
 </nav>

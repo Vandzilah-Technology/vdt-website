@@ -1,0 +1,235 @@
+/*Section one*/
+.section-one {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0, 0, 0, 0.45));
+}
+
+.bg-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+.section-one div {
+  width: 55%;
+  margin: 5% 0 0 10%;
+}
+
+.section-one div p {
+  margin-top: 1%;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+
+/*Section two*/
+.section-two {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.section-two h3 {
+  color: #A8A680;
+}
+
+.section-two h2 {
+  margin: 1% 0;
+}
+
+.section-two p {
+  width: 35%;
+  margin: 0 auto;
+}
+
+/*Section three*/
+.section-three {
+  height: 620px;
+  width: 90%;
+  margin: 0 auto 5% auto;
+  /*border: 2px solid red;*/
+  display: flex;
+  justify-content: center;
+}
+
+.section-three .row-x {
+  position: relative;
+  width: 45%;
+  height: 90%;
+  /*border: 3px solid yellow;*/
+}
+
+.section-three .row-x img {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  right: 0;
+}
+
+.section-three .row-y {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  /*border: 3px solid blue;*/
+}
+
+.section-three .row-y img {
+  position: absolute;
+  height: 90%;
+  left: 0;
+  bottom: -5%;
+}
+
+.section-three p {
+  position: absolute;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.section-three .row-x p {
+  bottom: 0;
+  right: 0;
+}
+
+.section-three .row-y p {
+  bottom: 0;
+  left: 150px;
+}
+
+
+/*!*Section four*!*/
+/*.section-four {*/
+/*  height: 90vh;*/
+/*  width: 100%;*/
+/*}*/
+
+/*.section-four img {*/
+/*  position: absolute;*/
+/*  max-width: 50%;*/
+/*}*/
+
+/*.row-y {*/
+/*  width: 70%;*/
+/*  height: 100%;*/
+/*  margin: 0 auto;*/
+/*  position: relative;*/
+/*}*/
+
+/*.row-y img:nth-of-type(1){*/
+/*  left: 0;*/
+/*  bottom: 10%;*/
+/*}*/
+
+/*.row-y img:nth-of-type(2){*/
+/*  right: 0;*/
+/*  top: 0;*/
+/*}*/
+
+
+
+
+
+@media (max-width: 736px) {
+
+  .section-one div {
+    width: 90%;
+    margin: 10% auto 0 auto;
+  }
+
+  .section-one div p {
+    font-size: 0.6em;
+  }
+
+  .section-two p {
+    width: 70%;
+  }
+
+  .section-three {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-three .row-x {
+    width: 90%;
+  }
+
+  .section-three .row-y {
+    width: 90%;
+  }
+
+  .section-three .row-y img {
+   top: 0;
+  }
+
+  .section-three .row-y p {
+    bottom: 50px;
+    left: 100px;
+  }
+
+  .section-three .row-x {
+    height: 80%;
+  }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
+  .section-one {
+    height: 1000px;
+  }
+}
+
+
+
+
+
+@media (max-width: 350px) {
+  .section-one div {
+    margin: 15% auto 0 auto;
+  }
+}
+
+
+
+
+
+@media (min-width:737px) and (max-width:1080px) {
+  .section-one div {
+    width: 70%;
+  }
+
+  .section-three {
+    width: 100%;
+    height: 500px;
+  }
+
+  .section-three .row-x {
+    width: 40%;
+    height: 70%;
+  }
+
+  .section-three .row-y {
+    width: 40%;
+  }
+
+  .section-three .row-y img {
+    position: absolute;
+    height: 90%;
+    left: -40px;
+    bottom: 0;
+  }
+
+  .section-three .row-y p {
+    bottom: 30px;
+    right: 0;
+  }
+}
+
