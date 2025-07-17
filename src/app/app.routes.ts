@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
 import {Appname} from '../misc/Appname';
-import {AppComponent} from './app.component';
+import {HomeComponent} from '../pages/home/home.component';
 
 export const routes: Routes = [
 
   {
     path: '',
-    component: AppComponent,
-    title: `${Appname.appName} - Home`,
+    component: HomeComponent,
+    title: `${Appname.appName}`,
   }
 ];
