@@ -1,5 +1,5 @@
 nav {
-  height: 100px;
+  height: 90px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -32,12 +32,13 @@ nav {
 .languages {
   position: absolute;
   top: 65%;
-  right: 5%;
+  right: 15%;
   height: 17vh;
   width: 20vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   padding: 2% 0;
+  background-color: white;
 }
 
 .languages ul {
