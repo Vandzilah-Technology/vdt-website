@@ -136,6 +136,40 @@
 /*}*/
 
 
+/*Section five*/
+.section-five {
+  border: 2px solid red;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-five div {
+  border: 2px solid blue;
+  width: 60%;
+}
+
+.section-five h1 {
+  margin: 2% 0;
+}
+
+.explore {
+  width: 20%;
+}
+
+.explore h3 {
+  color: #A8A680;
+  text-align: center;
+}
+
+.explore p {
+  width: 75%;
+}
+
+
+
+
 
 
 
