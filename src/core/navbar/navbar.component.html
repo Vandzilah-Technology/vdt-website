@@ -1,6 +1,6 @@
 <nav>
  <div class="box">
-   <img class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
+   <img routerLink="/" class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
    <div class="lang">
      <p *ngIf="!isHamburger" (click)="setLanguages()">{{languages[0].languageCode}}</p>
 
