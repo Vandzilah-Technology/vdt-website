@@ -18,7 +18,7 @@
   /* Mobile sizes (auto-calculated as 60% of desktop) */
   --h1-mobile: 2.2rem;    /* ~38px */
   --h2-mobile: 1.5rem;    /* 24px */
-  --p-mobile: 0.8375rem;  /* ~15px */
+  --p-mobile: 0.6375rem;  /* ~15px */
   --a-mobile: 0.75rem;    /* 12px (same) */
 
   /* Fluid scaling formulas */

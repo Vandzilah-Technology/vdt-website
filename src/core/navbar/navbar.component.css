@@ -79,7 +79,6 @@ nav {
 
 .dropdown {
   position: absolute;
-  z-index: 5;
   width: 99%;
   height: 98vh;
   background-color: white;
@@ -90,6 +89,10 @@ nav {
   justify-content: space-between;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+}
+
+.dropdown ul {
+  padding-left: 0;
 }
 
 .dropdown .close {
@@ -110,8 +113,8 @@ nav {
 
 .main .menu {
   position: absolute;
-  left: 0;
-  top: 12%;
+  left: -35px;
+  top: 40px;
 }
 
 .dropdown li {
@@ -151,8 +154,25 @@ nav {
   margin: 0;
 }
 
+.culture {
+  position: relative;
+}
+
+.culture ul {
+  margin-left: 50px;
+}
+
+.culture ul li {
+  font-size: 25px;
+  font-weight: 400;
+}
+
 
 @media (max-width: 736px) {
+  nav {
+    height: 65px;
+  }
+
   .vdt-logo {
     max-width: 35%;
   }
@@ -162,7 +182,7 @@ nav {
   }
 
   .dropdown {
-    width: 50%;
+    width: 55%;
     position: fixed;
     height: 70vh;
     border: 1px solid #1C5980;
@@ -177,13 +197,26 @@ nav {
     margin-left: 5%;
   }
 
+  .culture ul {
+    margin-left: 10px;
+  }
+
+  .culture ul li {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
   .foot .vdt-sm-logo {
     width: 20%;
   }
 
+  .dropdown ul {
+    padding-left: 10px;
+  }
+
   .main .menu {
-    top: 3%;
-    left: -10%;
+    top:13%;
+    left: -8%;
   }
 
   .foot div {

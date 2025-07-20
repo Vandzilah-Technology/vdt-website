@@ -1,6 +1,6 @@
 <nav>
  <div class="box">
-   <img *ngIf="!isHamburger" class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
+   <img class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
    <div class="lang">
      <p *ngIf="!isHamburger" (click)="setLanguages()">{{languages[0].languageCode}}</p>
 
@@ -23,7 +23,15 @@
            <ul>
              <li>Projects</li>
              <li>Services</li>
-             <li>Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow"></li>
+             <li class="culture" (click)="setOurCulture()">Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow">
+
+               <ng-container *ngIf="isOurCulture">
+                 <ul data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="200">
+                   <li>VDT foundation</li>
+                 </ul>
+               </ng-container>
+
+             </li>
              <li>Careers</li>
              <li>Insights</li>
              <li>Get In Touch</li>
