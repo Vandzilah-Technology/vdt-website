@@ -45,7 +45,7 @@
 }
 
 .section-two p {
-  width: 35%;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -82,15 +82,16 @@
   background-color: black;
   padding: 5px;
   border-radius: 10px;
+  font-size: 1.1em;
 }
 
 .x p {
-  bottom: 0;
+  bottom: -17px;
   right: 0;
 }
 
 .y p {
-  bottom: 23px;
+  bottom: 5px;
   right: 82px;
 }
 
@@ -120,7 +121,7 @@
 }
 
 .explore p {
-  width: 75%
+  width: 85%
 }
 
 .visual {
@@ -128,6 +129,7 @@
   border-radius: 15px;
   width: 50%;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+  margin-top: 60px;
 }
 
 .visual div {
@@ -287,7 +289,7 @@
   }
 
   .section-two p {
-    width: 70%;
+    width: 90%;
   }
 
   .section-three {
@@ -295,6 +297,10 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 0;
+  }
+
+  .section-three p {
+    font-size: 0.8em;
   }
 
   .section-three .x {
@@ -308,9 +314,14 @@
     margin-top: -5px;
   }
 
+  .x p {
+    bottom: -10px;
+    right: 0;
+  }
+
   .y p {
-    bottom: 10px;
-    right: 45px;
+    bottom: 0;
+    right: 48px;
   }
 
   .section-five {
@@ -330,6 +341,7 @@
 
   .visual {
     width: 90%;
+    text-align: center;
   }
 
   .visual div img {
@@ -345,6 +357,12 @@
     margin-top: -10px;
   }
 
+  .visual p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .section-six {
     height: auto;
     flex-direction: column-reverse;
@@ -357,9 +375,16 @@
   }
 
   .foundation {
-    width: 80%;
+    width: 90%;
     margin-bottom: -50px;
     margin-top: 20px;
+    text-align: center;
+  }
+
+  .foundation p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -412,8 +437,25 @@
   }
 
   .y p {
-    bottom: 13px;
-    right: 54px;
+    bottom: -5px;
+    right: 56px;
+  }
+
+  .explore {
+    width: 45%;
+  }
+
+  .visual {
+    width: 53%;
+  }
+
+  .visual div img {
+    transform: scale(0.7);
+    margin-right: 0;
+  }
+
+  .visual div {
+    margin-bottom: 0;
   }
 
 }
