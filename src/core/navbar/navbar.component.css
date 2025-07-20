@@ -1,5 +1,5 @@
 nav {
-  height: 90px;
+  height: 80px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -33,20 +33,24 @@ nav {
   position: absolute;
   top: 65%;
   right: 15%;
-  height: 17vh;
+  height: 25vh;
   width: 20vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
-  padding: 2% 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .languages ul {
-  height: 100%;
+  height: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .languages li {
@@ -55,16 +59,17 @@ nav {
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
-  padding: 2% 0;
+  padding: 5px 0;
 }
 
 .languages li:hover {
   background: rgba(177, 172, 172, 0.2);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .hamburger {
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .lang p {
@@ -75,15 +80,16 @@ nav {
 .dropdown {
   position: absolute;
   z-index: 5;
-  width: 100%;
-  height: 90vh;
+  width: 99%;
+  height: 98vh;
   background-color: white;
   top: 5%;
   right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*background: linear-gradient(118.61deg, #1C5980 0.99%, #013534 100%);*/
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
 }
 
 .dropdown .close {
@@ -104,8 +110,8 @@ nav {
 
 .main .menu {
   position: absolute;
-  left: -4%;
-  top: 5%;
+  left: 0;
+  top: 12%;
 }
 
 .dropdown li {
