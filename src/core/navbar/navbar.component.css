@@ -167,6 +167,12 @@ nav {
   font-weight: 400;
 }
 
+.routerLinkActive {
+  color: #1C5980;
+}
+
+
+
 
 @media (max-width: 736px) {
   nav {

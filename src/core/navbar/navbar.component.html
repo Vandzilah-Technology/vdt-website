@@ -21,9 +21,12 @@
          <div class="main">
            <img class="menu" src="/core/nav/MENU.svg" alt="">
            <ul>
-             <li>Projects</li>
-             <li>Services</li>
-             <li class="culture" (click)="setOurCulture()">Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow">
+             <li routerLinkActive="routerLinkActive" routerLink="/projects">Projects</li>
+             <li routerLinkActive="routerLinkActive">Services</li>
+             <li routerLinkActive="routerLinkActive"
+                 class="culture"
+                 (click)="setOurCulture()">
+               Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow">
 
                <ng-container *ngIf="isOurCulture">
                  <ul data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="200">
@@ -32,9 +35,9 @@
                </ng-container>
 
              </li>
-             <li>Careers</li>
-             <li>Insights</li>
-             <li>Get In Touch</li>
+             <li routerLinkActive="routerLinkActive">Careers</li>
+             <li routerLinkActive="routerLinkActive">Insights</li>
+             <li routerLinkActive="routerLinkActive">Get In Touch</li>
            </ul>
          </div>
 
