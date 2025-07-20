@@ -1,6 +1,6 @@
 <nav>
  <div class="box">
-   <img *ngIf="!isHamburger" class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
+   <img routerLink="/" class="vdt-logo" src="/core/nav/VDT-logo.svg" alt="vdt logo">
    <div class="lang">
      <p *ngIf="!isHamburger" (click)="setLanguages()">{{languages[0].languageCode}}</p>
 
@@ -21,12 +21,23 @@
          <div class="main">
            <img class="menu" src="/core/nav/MENU.svg" alt="">
            <ul>
-             <li>Projects</li>
-             <li>Services</li>
-             <li>Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow"></li>
-             <li>Careers</li>
-             <li>Insights</li>
-             <li>Get In Touch</li>
+             <li routerLinkActive="routerLinkActive" routerLink="/projects">Projects</li>
+             <li routerLinkActive="routerLinkActive">Services</li>
+             <li routerLinkActive="routerLinkActive"
+                 class="culture"
+                 (click)="setOurCulture()">
+               Our Culture <img src="/core/nav/down-arrow.svg" alt="down arrow">
+
+               <ng-container *ngIf="isOurCulture">
+                 <ul data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="200">
+                   <li>VDT foundation</li>
+                 </ul>
+               </ng-container>
+
+             </li>
+             <li routerLinkActive="routerLinkActive">Careers</li>
+             <li routerLinkActive="routerLinkActive">Insights</li>
+             <li routerLinkActive="routerLinkActive">Get In Touch</li>
            </ul>
          </div>
 

@@ -1,11 +1,14 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import {NgIf,  isPlatformBrowser} from '@angular/common';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 import  AOS from 'aos';
 
 @Component({
   selector: 'app-navbar',
   imports: [
-    NgIf
+    NgIf,
+    RouterLinkActive,
+    RouterLink
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
@@ -30,6 +33,7 @@ export class NavbarComponent implements OnInit {
 
   isHamburger : boolean = false;
   isLanguages : boolean = false;
+  isOurCulture : boolean = false;
 
   setHamburger () : void {
     this.isLanguages = false;
@@ -38,5 +42,9 @@ export class NavbarComponent implements OnInit {
 
   setLanguages () : void {
     this.isLanguages = !this.isLanguages;
+  }
+
+  setOurCulture () : void {
+    this.isOurCulture = !this.isOurCulture;
   }
 }

@@ -1,106 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
-
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Onest", sans-serif;
-}
+/* ================
+   FONT SIZE SYSTEM
+   ================ */
 
 @font-face {
-  font-family: "Onest";
-  src: url("../public/fonts/onest/Onest-Regular.ttf");
+  font-family: 'Lato';
+  font-style: normal;
+  font-display: swap;
 }
+
+:root {
+  /* Your exact desktop sizes */
+  --h1-desktop: 4rem;     /* 64px */
+  --h2-desktop: 2.5rem;   /* 40px */
+  --p-desktop: 1.4625rem; /* 25px */
+  --a-desktop: 0.75rem;   /* 12px */
+
+  /* Mobile sizes (auto-calculated as 60% of desktop) */
+  --h1-mobile: 2.2rem;    /* ~38px */
+  --h2-mobile: 1.5rem;    /* 24px */
+  --p-mobile: 0.6375rem;  /* ~15px */
+  --a-mobile: 0.75rem;    /* 12px (same) */
+
+  /* Fluid scaling formulas */
+  --h1-size: clamp(var(--h1-mobile), 4vw + 1rem, var(--h1-desktop));
+  --h2-size: clamp(var(--h2-mobile), 2.5vw + 1rem, var(--h2-desktop));
+  --p-size: clamp(var(--p-mobile), 1.5vw + 0.5rem, var(--p-desktop));
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
 h1 {
-  font-size: clamp(60px, 8vh, 80px);
+  font-size: var(--h1-size);
+  line-height: 1.1;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: clamp(36px, 5.5vh, 60px);
-}
-
-h3 {
-  font-size: clamp(24px, 3.5vh, 32px);
-}
-
-h4 {
-  font-size: clamp(18px, 3vw, 24px);
-}
-
-h5 {
-  font-size: clamp(30px, 5vh, 48px);
+  font-size: var(--h2-size);
+  line-height: 1.2;
+  margin-bottom: 0.6em;
 }
 
 p {
-  font-size: clamp(10px, 2.5vh, 20px);
+  font-size: var(--p-size);
+  line-height: 1.6;
+  margin-bottom: 1em;
+  max-width: 75ch;
+  overflow-wrap: break-word;
 }
 
+a {
+  font-size: var(--a-desktop); /* Fixed size as requested */
+  text-decoration: none;
+}
 
-
-
-
-
-/*Mobile Screens*/
-@media (max-width: 736px)  {
-  p {
-    font-size: clamp(8px, 1.2vh, 10px);
-  }
-
+/* ================
+   MEDIA QUERIES
+   (For fine-tuning)
+   ================ */
+@media (max-width: 736px) {
+  /* Mobile adjustments */
   h1 {
-    font-size: clamp(18px, 2.8vh, 24px);
-  }
-
-  h2 {
-    font-size: clamp(10px, 2.5vh, 20px);
-  }
-
-  h3 {
-    font-size: clamp(9px, 1.5vh, 12px);
-  }
-
-  h4 {
-    font-size: clamp(8px, 1vh + 2px, 11px);
-  }
-
-  h5 {
-    font-size: clamp(9.5px, 2vh, 16px);
-  }
-
-  a {
-    font-size: clamp(8px, 1.2vh, 10px);
+    --h1-size: 2rem; /* Slightly smaller for very small phones */
   }
 }
 
-
-
-
-/* ----------- Tablets ----------- */
-@media (min-width: 737px) and (max-width: 1080px) {
-  p {
-    font-size: clamp(9px, 1.5vh, 12px);
-  }
-
-  a {
-    font-size: clamp(9px, 1.5vh, 12px);
-  }
+@media (max-width: 350px) {
 
   h1 {
-    font-size: clamp(30px, 4.8vh, 40px);
+    --h1-size: 2rem; /* Slightly smaller for very small phones */
   }
 
   h2 {
-    font-size: clamp(16px, 4vh, 30px);
+    --h2-size: 1.4rem;
   }
 
-  h3 {
-    font-size: clamp(10px, 2.5vh, 20px);
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (min-width:737px) and (max-width:1080px) {
+  h1 {
+    --h1-size: 2.5rem; /* Slightly smaller for very small phones */
   }
 
-  h4 {
-    font-size: clamp(10px, 2vh, 14px);
+  p {
+    font-size: 1.2rem;
   }
+}
 
-  h5 {
-    font-size: clamp(12px, 3vh, 25px);
+@media (min-width: 2000px) {
+  /* 4K/ultra-wide adjustments */
+  h1 {
+    --h1-size: 5rem; /* Larger for huge screens */
   }
 }
