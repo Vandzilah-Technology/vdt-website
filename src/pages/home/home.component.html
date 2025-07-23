@@ -134,6 +134,24 @@
 
   <p>Our work speaks for itself but so do our partners. Over the years, we've earned the trust of respected organizations through impactful, reliable, and innovative digital solutions</p>
 
-  <div class="sponsor-box"></div>
+    <div class="reviews">
+      <ng-container *ngFor="let review of reviews.slice(0, 3); let i = index">
+
+      <div class="review">
+        <p>{{review.review}}</p>
+        <h5>{{review.author}}</h5>
+        <div class="stars">
+<!--          <img *ngFor="let item of [].constructor(5); let i = index" src="/pages/home/star-unfilled.svg" alt="">-->
+          <app-star-rating [rating]="review.starRating"></app-star-rating>
+        </div>
+      </div>
+
+      </ng-container>
+    </div>
+
+    <div class="review-btn">
+      <button *ngFor="let item of [].constructor(reviews.length); let i = index"></button>
+    </div>
+
 </section>
 

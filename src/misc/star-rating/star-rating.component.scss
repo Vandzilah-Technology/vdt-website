@@ -1,0 +1,12 @@
+.star-container {
+  display: flex;
+  gap: 4px;
+
+  svg {
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

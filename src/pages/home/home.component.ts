@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import {ButtonComponent} from '../../shared components/button/button.component';
 import {CommandModule} from '@angular/cli/src/command-builder/command-module';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
+import {StarRatingComponent} from '../../misc/star-rating/star-rating.component';
 
 @Component({
   selector: 'app-home',
-  imports: [ButtonComponent, NgForOf],
+  imports: [ButtonComponent, NgForOf, StarRatingComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -43,5 +44,35 @@ export class HomeComponent {
       icon: "AI-solutions"
     },
   ]
+
+  reviews: any[] = [
+    {
+      review: "Vandzilah Technology expertly handled the digitization of legal documents. Their team demonstrated deep technical understanding and professionalism. They communicated clearly and adapted quickly to evolving needs.The platform they developed is user-friendly and highly efficient. This project has greatly improved access to legal information in Ghana. We are proud to have partnered with such a capable and mission-driven team.",
+      author:"GIZ",
+      starRating: 4
+    },
+    {
+      review: "Working with Vandzilah Technology was a seamless experience. They designed and implemented a custom monitoring system from scratch. Their engineers showed strong innovation and attention to detail. The system runs smoothly and delivers real-time, accurate data. Their work made a measurable impact in rural water management. We look forward to future collaborations with their talented team.",
+      author: "Witteveen+Bos",
+      starRating: 5
+    },
+    {
+      review: "Vandzilah Technology has transformed digital access on our campus. Their networking solutions brought stable internet to every corner. Students can now access online resources without limitations. They also digitized our library, making materials more accessible. The entire academic environment has improved thanks to their work. We highly recommend them for any educational technology project.",
+      author: "Foso College of Education",
+      starRating: 4
+    },
+    {
+      review: "Working with Vandzilah Technology was a seamless experience. They designed and implemented a custom monitoring system from scratch. Their engineers showed strong innovation and attention to detail. The system runs smoothly and delivers real-time, accurate data. Their work made a measurable impact in rural water management. We look forward to future collaborations with their talented team.",
+      author: "Witteveen+Bos",
+      starRating: 5
+    },
+    {
+      review: "Vandzilah Technology expertly handled the digitization of legal documents. Their team demonstrated deep technical understanding and professionalism. They communicated clearly and adapted quickly to evolving needs.The platform they developed is user-friendly and highly efficient. This project has greatly improved access to legal information in Ghana. We are proud to have partnered with such a capable and mission-driven team.",
+      author:"GIZ",
+      starRating: 4
+    }
+  ]
+
+  onReview: boolean = false;
 
 }

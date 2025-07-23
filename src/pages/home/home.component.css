@@ -336,6 +336,73 @@
   margin: 0;
 }
 
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 90%;
+  margin: 2% auto 1% auto;
+}
+
+.reviews .review {
+  width: 25%;
+  background: linear-gradient(118.61deg, #1C5980 0.99%, #013534 100%);
+  color: white;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review p {
+  width: 90%;
+  font-size: 0.625rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.review h5 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.review-active {
+  height: 50vh;
+  width: 30%;
+}
+
+.review-active p {
+  font-size: 1rem;
+}
+
+.review-active h5 {
+  font-size: 1.25rem;
+}
+
+.review-btn {
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid red;
+}
+
+.review-btn button {
+  background-color: rgba(28, 89, 128, 0.31);
+  height: 0.6875rem;
+  width: 0.6875rem;
+  border-radius: 100%;
+  padding: 0;
+}
+
+.btn-active {
+  background-color: #1C5980;
+}
+
+.stars img {
+
+}
+
 
 
 
