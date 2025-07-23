@@ -65,7 +65,7 @@
 
 .section-three .y {
   position: relative;
-  width: 523px;
+  width: 600px;
   height: 706px;
   margin-top: 140px;
 }
@@ -92,7 +92,7 @@
 
 .y p {
   bottom: 5px;
-  right: 82px;
+  right: 94px;
 }
 
 /*Section five*/
@@ -124,10 +124,21 @@
   width: 85%
 }
 
-.visual {
-  padding: 3% 0;
-  border-radius: 15px;
+.services {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+}
+
+.visual {
+  padding: 5% 0;
+  border-radius: 15px;
+  width: 90%;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
   margin-top: 60px;
 }
@@ -144,12 +155,18 @@
 }
 
 .visual h2 {
-  text-align: center;
+  margin-top: 0;
 }
 
 .visual p {
   width: 90%;
   margin: 0 auto;
+}
+
+.section-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
 
@@ -270,6 +287,54 @@
 }
 
 
+/*Section seven*/
+.section-seven {
+  color: white;
+  background: linear-gradient(118.61deg, #1C5980 0.99%, #013534 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0;
+}
+
+.section-seven h1 {
+  margin: 1% 0;
+}
+
+.section-seven h3 {
+  color: #A8A680;
+  margin: 0;
+}
+
+.section-seven p {
+  width: 45%;
+  text-align: center;
+  margin: 0;
+}
+
+
+/*Section eight*/
+.section-eight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0;
+}
+
+.section-eight h1 {
+  margin: 1% 0;
+}
+
+.section-eight h3 {
+  color: #A8A680;
+  margin: 0;
+}
+
+.section-eight p {
+  width: 45%;
+  text-align: center;
+  margin: 0;
+}
 
 
 
@@ -321,7 +386,7 @@
 
   .y p {
     bottom: 0;
-    right: 48px;
+    right: 50px;
   }
 
   .section-five {
@@ -339,7 +404,7 @@
     margin: 0 auto;
   }
 
-  .visual {
+  .services {
     width: 90%;
     text-align: center;
   }
@@ -385,6 +450,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .section-seven p {
+    width: 90%;
+  }
+
+  .section-eight p {
+    width: 90%;
   }
 }
 
@@ -436,26 +509,43 @@
     margin-top: 50px;
   }
 
+  .section-three p {
+    font-size: 1em;
+  }
+
   .y p {
     bottom: -5px;
-    right: 56px;
+    right: 60px;
   }
 
   .explore {
     width: 45%;
   }
 
-  .visual {
+  .services {
     width: 53%;
+    height: 40vh;
   }
 
   .visual div img {
-    transform: scale(0.7);
+    transform: scale(0.6);
     margin-right: 0;
   }
 
   .visual div {
     margin-bottom: 0;
+  }
+
+  .visual h2 {
+    font-size: 1.5em;
+  }
+
+  .section-seven p {
+    width: 60%;
+  }
+
+  .section-eight p {
+    width: 60%;
   }
 
 }

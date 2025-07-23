@@ -55,25 +55,27 @@
       to expand your reach and drive impact</p>
   </div>
 
-  <div class="visual">
-    <div>
-      <img src="/pages/home/visual-icon.svg" alt="">
-      <h2>Creative & Visual design</h2>
+
+    <div class="services">
+      <ng-container *ngFor="let service of services">
+        <div class="visual">
+          <div>
+            <img src="/pages/home/{{service.icon}}.svg" alt="">
+            <h2>{{service.header}}</h2>
+          </div>
+
+          <p>{{service.details}}
+            <app-button>View service</app-button>
+          </p>
+
+        </div>
+      </ng-container>
     </div>
 
-    <p>Fusing creativity and strategy to craft compelling visual solutions rooted in timeless
-      design and current trends. Going beyond aesthetics, focusing on functional graphics, user interfaces,
-      and brand visuals that shape positive user experiences.
-      Working collaboratively, they bring bold ideas to life across digital platforms for real impact.
+</section>
 
-    <app-button>View service</app-button>
-    </p>
-
-  </div>
-
-<!--  <div style="margin: 0 auto">-->
-<!--    <app-button buttonClassName="shadow-button">View all services</app-button>-->
-<!--  </div>-->
+<section class="section-button">
+  <app-button>View all services</app-button>
 </section>
 
 <section class="section-six">
@@ -112,4 +114,26 @@
   </div>
 </section>
 
+<section class="section-seven">
+  <h3>CLIENTS & PARTNERS</h3>
+
+  <h1>Collaborating for <br> Lasting Impact</h1>
+
+  <p>Our success is built on meaningful collaborations with organizations that share our vision for digital transformation and sustainable growth.</p>
+
+  <app-button>Join us</app-button>
+
+  <div class="sponsor-box"></div>
+</section>
+
+
+<section class="section-eight">
+  <h3>TESTIMONIALS</h3>
+
+  <h1>What people say about us</h1>
+
+  <p>Our work speaks for itself but so do our partners. Over the years, we've earned the trust of respected organizations through impactful, reliable, and innovative digital solutions</p>
+
+  <div class="sponsor-box"></div>
+</section>
 
